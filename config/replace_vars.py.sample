@@ -1,0 +1,7 @@
+
+# Create OAuth 2.0 Client via GCP Console
+CLIENT_ID = ""
+CLIENT_SECRET = ""
+
+# Your Google Workspace domains
+ALLOW_DOMAINS = ["hoge.com"]

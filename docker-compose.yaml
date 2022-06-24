@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  superset:
+    build: .
+    ports:
+      - "8080:8088"
+    volumes: 
+      - superset_home:/app/superset_home
+    links:
+      - redis
+  redis:
+    image: redis
+volumes:
+  superset_home:
+    
