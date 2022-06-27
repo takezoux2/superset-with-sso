@@ -4,4 +4,4 @@ CLIENT_ID = ""
 CLIENT_SECRET = ""
 
 # Your Google Workspace domains
-ALLOW_DOMAINS = ["hoge.com"]
+DOMAINS = ["hoge.com"]
