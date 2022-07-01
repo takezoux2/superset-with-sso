@@ -3,6 +3,10 @@ from custom_sso_security_manager import CustomSsoSecurityManager
 from flask_appbuilder.security.manager import AUTH_OAUTH
 from replace_vars import CLIENT_ID, CLIENT_SECRET
 
+FEATURE_FLAGS = {
+	"ENABLE_TEMPLATE_PROCESSING": True
+}
+
 CUSTOM_SECURITY_MANAGER = CustomSsoSecurityManager
 
 AUTH_TYPE = AUTH_OAUTH

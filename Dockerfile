@@ -1,11 +1,9 @@
 FROM apache/superset:latest
 
-RUN pip install pybigquery pyathenajdbc Authlib
-
-COPY config/* /app/pythonpath/
-
+USER root
+RUN pip install pybigquery Authlib
 RUN superset db upgrade && superset init
-# RUN superset db upgrade && superset init
 
-
-
+RUN pip install shillelagh[gsheetsapi] PyAthena
+USER superset
+COPY config/* /app/pythonpath/
